@@ -9,4 +9,7 @@ const iter = generateNumberSequence(10)
 
 for (const num of iter) {
   console.log(num);
+  if (num===10) {
+    iter.throw("Generator is broken")
+  }
 }
